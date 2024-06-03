@@ -1,15 +1,14 @@
-async function AddItemToCart(userCart) {
-
+async function AddItemToCart(userCart, item) {
+  userCart.push(item)
 }
 
-async function DeleteItemFromCart(userCart, itemName) {
-
+async function CalculateTotal(userCart) {
+  const result = userCart.reduce((total, item) => total + item.subtotal(), 0)
+  console.log(result);
 }
 
-async function RemoveItemFromCart(userCart, index) {
+async function DeleteItemFromCart(userCart, itemName) {}
 
-}
+async function RemoveItemFromCart(userCart, index) {}
 
-async function CalculateTotal (userCart) {
-
-}
+export { AddItemToCart, CalculateTotal, DeleteItemFromCart, RemoveItemFromCart }
