@@ -25,8 +25,10 @@ async function RemoveItemFromCart(userCart, item) {
     return
   } else if (userCart[indexFound].itemQuantity > 1) {
     userCart[indexFound].itemQuantity -= 1
+    return
   } else if (userCart[indexFound].itemQuantity == 1) {
     userCart.splice(indexFound, 1)
+    return
   }
 }
 

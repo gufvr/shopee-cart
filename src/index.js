@@ -15,10 +15,6 @@ await cartService.AddItemToCart(myCart, item2)
 await cartService.RemoveItemFromCart(myCart, item2)
 await cartService.RemoveItemFromCart(myCart, item2)
 
-// await cartService.RemoveItemFromCart(myCart, 1)
-
 await cartService.displayCart(myCart)
 
-// await cartService.DeleteItemFromCart(myCart, item2.itemName)
-// await cartService.DeleteItemFromCart(myCart, item1.itemName)
 await cartService.CalculateTotal(myCart)
