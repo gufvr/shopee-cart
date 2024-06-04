@@ -11,9 +11,8 @@ const item2 = await createItem('Hotwheels Lamborghini', 39.99, 3)
 
 await cartService.AddItemToCart(myCart, item1)
 await cartService.AddItemToCart(myCart, item2)
+await cartService.displayCart(myCart)
 
-await cartService.DeleteItemFromCart(myCart, item2.itemName)
-await cartService.DeleteItemFromCart(myCart, item1.itemName)
-
-console.log('Shopee Cart total is:')
+// await cartService.DeleteItemFromCart(myCart, item2.itemName)
+// await cartService.DeleteItemFromCart(myCart, item1.itemName)
 await cartService.CalculateTotal(myCart)
