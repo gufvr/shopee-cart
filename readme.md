@@ -1,4 +1,4 @@
-# Shopee's checkout
+# Shopee's cart
 
 Welcome to the Shopee Cart Project! This project aims to create a shopping cart system inspired by Shopee, designed to store items and automatically calculate sub-items.
 
