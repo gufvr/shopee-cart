@@ -11,6 +11,9 @@ const item2 = await createItem('Hotwheels Lamborghini', 39.99, 3)
 
 await cartService.AddItemToCart(myCart, item1)
 await cartService.AddItemToCart(myCart, item2)
+
+await cartService.RemoveItemFromCart(myCart, 1)
+
 await cartService.displayCart(myCart)
 
 // await cartService.DeleteItemFromCart(myCart, item2.itemName)
