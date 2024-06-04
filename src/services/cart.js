@@ -7,7 +7,13 @@ async function CalculateTotal(userCart) {
   console.log(result);
 }
 
-async function DeleteItemFromCart(userCart, itemName) {}
+async function DeleteItemFromCart(userCart, itemName) {
+  const index = userCart.findIndex((item) => item.itemName === itemName)
+
+  if(index !== -1) {
+    userCart.splice(index, 1)
+  }
+}
 
 async function RemoveItemFromCart(userCart, index) {}
 
